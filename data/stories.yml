@@ -1,0 +1,217 @@
+version: "2.0"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: C history
+    steps:
+      - intent: about_c
+      - action: utter_C_history
+
+  - story: C data types
+    steps:
+      - intent: c_data_types
+      - action: utter_data_types
+
+  - story: C integer
+    steps:
+      - intent: know_integer
+      - action: utter_integer_info
+
+  - story: C range
+    steps:
+      - intent: know_all_ranges
+      - action: utter_all_ranges
+
+  - story: C float
+    steps:
+      - intent: know_float
+      - action: utter_float_info
+
+  - story: C char
+    steps:
+      - intent: know_char
+      - action: utter_char_info
+
+  - story: C void
+    steps:
+      - intent: know_void
+      - action: utter_void_info
+
+  - story: C variable
+    steps:
+      - intent: know_variable
+      - action: utter_variable_info
+
+  - story: C variable declaration
+    steps:
+      - intent: know_variable_declaration
+      - action: utter_variable_declaration_info
+
+  - story: C conditions
+    steps:
+      - intent: know_conditions
+      - action: utter_conditions_info
+
+  - story: C loops
+    steps:
+      - intent: know_loops
+      - action: utter_loops_info
+
+  - story: C forloop
+    steps:
+      - intent: know_for_loops
+      - action: utter_for_loops_info
+
+  - story: C while
+    steps:
+      - intent: know_while_loops
+      - action: utter_while_loops_info
+
+  - story: C dowhileloop
+    steps:
+      - intent: know_do_while_loops
+      - action: utter_do_while_loops_info
+
+  - story: C break
+    steps:
+      - intent: break_loops
+      - action: utter_break_loops
+
+  - story: C continue
+    steps:
+      - intent: continue_loops
+      - action: utter_continue_loops
+
+  - story: C prog
+    steps:
+      - intent: programming
+      - action: utter_programming
+
+  - story: C features
+    steps:
+      - intent: c_features
+      - action: utter_cfeatures
+
+  - story: C errors
+    steps:
+      - intent: errors
+      - action: utter_errors
+
+  - story: C synerr
+    steps:
+      - intent: syntax_errors
+      - action: utter_syntaxerrors
+
+  - story: C runerr
+    steps:
+      - intent: runtime_errors
+      - action: utter_runtimeerrors
+
+  - story: C linkerr
+    steps:
+      - intent: linker_errors
+      - action: utter_linkererrors
+
+  - story: C logerr
+    steps:
+      - intent: logical_errors
+      - action: utter_logicalerrors
+
+  - story: C semerr
+    steps:
+      - intent: semantic_errors
+      - action: utter_semanticerrors
+
+  - story: C key
+    steps:
+      - intent: reserved_words
+      - action: utter_reservedwords
+
+  - story: C iden
+    steps:
+      - intent: identifiers
+      - action: utter_identifiers
+
+  - story: C switch
+    steps:
+      - intent: switch_case
+      - action: utter_switchcase
+
+  - story: C operator
+    steps:
+      - intent: operators
+      - action: utter_operators
+
+  - story: C arith
+    steps:
+      - intent: arithmetic_operators
+      - action: utter_arithmeticoperators
+
+  - story: C relational
+    steps:
+      - intent: relational_operators
+      - action: utter_relationaloperators
+
+  - story: C logic
+    steps:
+      - intent: logical_operators
+      - action: utter_logicaloperators
+
+  - story: C bitwise
+    steps:
+      - intent: bitwise_operators
+      - action: utter_bitwiseoperators
+
+  - story: C assign
+    steps:
+      - intent: assignment_operators
+      - action: utter_assignmentoperators
+
+  - story: C coditional
+    steps:
+      - intent: conditional_operators
+      - action: utter_conditionaloperators
+
+  - story: C special
+    steps:
+      - intent: special_operators
+      - action: utter_specialoperators
+
+  - story: C bitwise
+    steps:
+      - intent: bitwise_operators
+      - action: utter_bitwiseoperators
+
+  - story: mem
+    steps:
+      - intent: mem_aloctation
+      - action: utter_mem_alloc
+
+  - story: str
+    steps:
+      - intent: strings
+      - action: utter_strings
+
+  - story: ptr
+    steps:
+      - intent: pointers
+      - action: utter_pointers
+
+  - story: struct
+    steps:
+      - intent: structures
+      - action: utter_struct
+
+  - story: qury
+    steps:
+      - intent: query
+      - action: action_get_stack_query
+
+  - story: out of scope
+    steps:
+      - intent: outofscope
+      - action: utter_outofscope

@@ -1,0 +1,65 @@
+version: "2.0"
+stories:
+- story: C data types (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      what are the data types in c
+  - action: action_listen  # predicted: utter_data_types
+  - intent: c_data_types
+  - action: utter_data_types
+- story: C integer (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      why is int used?
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_integer
+  - action: utter_integer_info
+- story: C range (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      ranges of various datatype
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_all_ranges
+  - action: utter_all_ranges
+- story: C float (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      When is float used?
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_float
+  - action: utter_float_info
+- story: C char (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      When is a character used?
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_char
+  - action: utter_char_info
+- story: C void (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      what is void
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_void
+  - action: utter_void_info
+- story: C variable (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      what are variables
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_variable
+  - action: utter_variable_info
+- story: C variable declaration (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      how to decalare a variable
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_variable_declaration
+  - action: utter_variable_declaration_info
+- story: C conditions (./tests/test_stories.yml)
+  steps:
+  - user: |-
+      What are conditional statements
+  - action: action_listen  # predicted: utter_data_types
+  - intent: know_conditions
+  - action: utter_conditions_info

@@ -1,0 +1,66 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+  - story: C data types
+    steps:
+      - user: |
+          what are the data types in c
+      - intent: c_data_types
+      - action: utter_data_types
+
+  - story: C integer
+    steps:
+      - user: |
+          why is int used?
+      - intent: know_integer
+      - action: utter_integer_info
+
+  - story: C range
+    steps:
+      - user: |
+          ranges of various datatype
+      - intent: know_all_ranges
+      - action: utter_all_ranges
+
+  - story: C float
+    steps:
+      - user: |
+          When is float used?
+      - intent: know_float
+      - action: utter_float_info
+
+  - story: C char
+    steps:
+      - user: |
+          When is a character used?
+      - intent: know_char
+      - action: utter_char_info
+
+  - story: C void
+    steps:
+      - user: |
+          what is void
+      - intent: know_void
+      - action: utter_void_info
+
+  - story: C variable
+    steps:
+      - user: |
+          what are variables
+      - intent: know_variable
+      - action: utter_variable_info
+
+  - story: C variable declaration
+    steps:
+      - user: |
+          how to decalare a variable
+      - intent: know_variable_declaration
+      - action: utter_variable_declaration_info
+
+  - story: C conditions
+    steps:
+      - user: |
+          What are conditional statements
+      - intent: know_conditions
+      - action: utter_conditions_info

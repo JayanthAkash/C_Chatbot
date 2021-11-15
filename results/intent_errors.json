@@ -1,0 +1,114 @@
+[
+  {
+    "text": "case",
+    "intent": "reserved_words",
+    "intent_prediction": {
+      "name": "switch_case",
+      "confidence": 0.6976278424263
+    }
+  },
+  {
+    "text": "+ operator",
+    "intent": "arithmetic_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "- operator",
+    "intent": "arithmetic_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "* operator",
+    "intent": "arithmetic_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "/ operator",
+    "intent": "arithmetic_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "% operator",
+    "intent": "arithmetic_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "== operator?",
+    "intent": "relational_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "< operator?",
+    "intent": "relational_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "> operator?",
+    "intent": "relational_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": ">= operator?",
+    "intent": "relational_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "<= operator?",
+    "intent": "relational_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "!= operator?",
+    "intent": "relational_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "|| operator?",
+    "intent": "logical_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.3295499086380005
+    }
+  },
+  {
+    "text": "?: Operator",
+    "intent": "conditional_operators",
+    "intent_prediction": {
+      "name": "assignment_operators",
+      "confidence": 0.35169467329978943
+    }
+  }
+]

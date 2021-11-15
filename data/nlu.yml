@@ -1,0 +1,1005 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - What's your name?
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: programming
+    examples: |
+      - What is programming?
+      - Programming?
+      - What is a Program?
+      - How does a program work?
+
+  - intent: about_c
+    examples: |
+      - C
+      - C programming
+      - What is C language?
+      - Who developed C?
+      - History of C.
+      - When was C developed?
+      - Which year C was developed?
+      - Tell me something about C programming?
+      - Can you tell me something about C?
+      - Who is the founder of C?
+      - Give me some info about C.
+      - What to do of C?
+      - What are features of C?
+      - C? What is that?
+      - Is it see? or Is it C?
+      - What are the key features in the C programming language?
+      - History of C
+
+  - intent: c_data_types
+    examples: |
+      - data types
+      - data type
+      - datatypes
+      - datatype
+      - what are data types in C?
+      - Where is data stored in C?
+      - How can I store my data in C?
+      - Suppose I have some data let's say a number or string. How can I store it?
+      - Storage facilities provied by C?
+      - What about C data stores?
+      - What about C storing?
+      - What are the basic data types associated with C?
+      - data types in C
+
+  - intent: know_integer
+    examples: |
+      - int
+      - When is int used?
+      - When is int data type used?
+      - Which data type is used to store number?
+      - How can I store a number?
+      - What facilities are provied by C to store a number?
+      - Can a number be stored in C?
+      - Tell me more about int data type?
+      - Tell me about number storing in C.
+      - what is int?
+
+  - intent: know_all_ranges
+    examples: |
+      - Tell me ranges of various datatype in C?
+      - Tell me spans of various datatype in C?
+      - What is limit of different datatypes in C?
+      - What is size of data types in C?
+      - What is range of integer data type?
+      - What are limits of int?
+      - What is span of int?
+      - Till where does the integer extend?
+      - What is range of float data type?
+      - What are limits of float?
+      - What is span of float?
+      - Till where does the float extend?
+      - What is range of char data type?
+      - What are limits of char?
+      - What is span of char?
+      - Till where does the char extend?
+      - Range of character datatype.
+      - What is range of double data type?
+      - What are limits of double?
+      - What is span of double?
+      - Till where does the double extend?
+      - c data ranges
+      - C data ranges
+      - data ranges in C
+      - tell me about C ranges
+
+  - intent: know_float
+    examples: |
+      - float
+      - When is float used?
+      - How to store floating point numbers?
+      - Can we store floating point numbers in C?
+      - When is float data type used?
+      - Which data type is used to store decimal number?
+      - How can I store a decimal number?
+      - What facilities are provied by C to store a decimal number?
+      - Can a decimal number be stored in C?
+      - Tell me more about float data type?
+      - Tell me about decimal number storing in C.
+      - What is float range?
+      - What is float span?
+      - Where to use float?
+      - Where to use double?
+      - When to use double?
+      - How is double used?
+      - what is float?
+
+  - intent: know_char
+    examples: |
+      - char
+      - When is character used?
+      - When is character data type used?
+      - Which data type is used to store character?
+      - How can I store a character?
+      - What facilities are provied by C to store a character?
+      - Can a character be stored in C?
+      - Tell me more about character data type?
+      - Tell me about character storing in C.
+      - tell me about char datatype
+      - tell me about character data type
+      - tell me about character datatype
+      - what is char?
+
+  - intent: know_void
+    examples: |
+      - void
+      - When is void used?
+      - When is void data type used?
+      - Which data type is used to store void?
+      - How can I store a void?
+      - What facilities are provied by C to store a void?
+      - Can a void be stored in C?
+      - Tell me more about void data type?
+      - Tell me about void storing in C.
+
+  - intent: know_variable
+    examples: |
+      - variable
+      - What is a variable?
+      - What are rules for naming a variable?
+      - How to name a memory location?
+      - Tell me about variables in C?
+      - What are variables in C?
+      - What's this thing called variable?
+
+  - intent: know_variable_declaration
+    examples: |
+      - Declare a variable
+      - How are variables declared in C?
+      - What is variable declaration ?
+      - How to delcare variable?
+      - What is the method to declare variables?
+      - What is delcaration and initialization?
+      - How to initizalize and declare variables?
+      - tell me about variable declaration in C
+      - Tell me about variable declaration in C
+
+  - intent: know_conditions
+    examples: |
+      - conditions
+      - conditional statements
+      - What are conditional statements in C?
+      - what is if?
+      - what is if else?
+      - How to give conditions in C?
+      - Tell me about if else?
+      - how are conditions given in C?
+      - Decision making in C?
+      - How are decisions evaluated in C?
+      - what is if-else decision making?
+      - How can I decide in C?
+      - Is decision making possible in C?
+
+  - intent: know_loops
+    examples: |
+      - loops
+      - What are loop statements in C?
+      - How to give looping conditions in C?
+      - Tell me about looping?
+      - loop making in C?
+      - How can I loop in C?
+      - is loop making possible in C?
+      - What is the process to loop in C?
+      - Explain general form of loop?
+      - what are the types of loops?
+
+  - intent: know_for_loops
+    examples: |
+      - for
+      - What is for loop in C?
+      - How to use for loop in C?
+      - Tell me about for loop in C?
+      - Explain for loop in C.
+      - What is syntax of for loop in c.
+      - tell me about for loop
+      - tell me about for loop in C
+
+  - intent: know_while_loops
+    examples: |
+      - while
+      - What is while loop in C?
+      - How to use while loop in C?
+      - Tell me about while loop in C?
+      - Explain while loop in C.
+      - What is syntax of while loop in c.
+
+  - intent: know_do_while_loops
+    examples: |
+      - do while
+      - What is do while loop in C?
+      - How to use do while loop in C?
+      - Tell me about do while loop in C?
+      - Explain do while loop in C.
+      - What is syntax of do while loop in c.
+
+  - intent: break_loops
+    examples: |
+      - break
+      - How to jump out of loops?
+      - How to break loops?
+      - How to end loop?
+      - What to do to break normal flow of loop?
+      - What is the process to abrubtly end loops?
+      - What is break and continue?
+      - How to use break?
+      - How to stop a loop?
+      - break statement in C
+
+  - intent: continue_loops
+    examples: |
+      - continue
+      - What are continue statements?
+      - Where to use continue?
+      - How to skip statements?
+
+  - intent: errors
+    examples: |
+      - Errors
+      - Errors in C
+      - Types of errors
+      - What are different types of errors in C?
+      - How do errors occur?
+      - C errors
+      - What types of errors does C programming language have?
+
+  - intent: runtime_errors
+    examples: |
+      - Runtime error
+      - What are errors that occur at runtime?
+
+  - intent: syntax_errors
+    examples: |
+      - Syntax error
+      - What are errors that occur at syntax?
+
+  - intent: linker_errors
+    examples: |
+      - Linker error
+      - Linking error
+      - What are errors that occur at linking?
+
+  - intent: logical_errors
+    examples: |
+      - Logical error
+      - What are errors that occur logically?
+
+  - intent: semantic_errors
+    examples: |
+      - Semantic error
+      - Symantic errors
+      - What are errors that occur at Semantic?
+
+  - intent: c_features
+    examples: |
+      - Features
+      - C features
+      - What are the features of C?
+      - Advantages of C
+      - C Programming Features
+
+  - intent: reserved_words
+    examples: |
+      - Reserved words
+      - Keywords
+      - Reserved words in C
+      - What are reserved words?
+      - Words part of library
+      - Words with Predefined meaning
+      - Predefined words in C
+      - auto
+      - break keyword
+      - case
+      - char keyword
+      - const
+      - continue keyword
+      - default
+      - do keyword
+      - double keyword
+      - else keyword
+      - enum
+      - extern
+      - for keyword
+      - goto keyword
+      - if keyword
+      - int keyword
+      - long keyword
+      - register keyword
+      - return keyword
+      - short keyword
+      - signed keyword
+      - sizeof keyword
+      - static keyword
+      - struct keyword
+      - switch keyword
+      - typedef keyword
+      - union keyword
+      - unsigned keyword
+      - void keyword
+      - volatile keyword
+      - while keyword
+
+  - intent: identifiers
+    examples: |
+      - Identifiers
+      - What are identifiers?
+      - name a variable
+      - name a function
+      - name a constant
+      - What is used to identify a value?
+      - How is a variable named?
+      - How are constants named?
+      - How are functions named?
+      - How are user-defined data named?
+      - Naming of keywords in C
+      - How to name a variable?
+      - what are identifiers in C
+
+  - intent: switch_case
+    examples: |
+      - Switch Case
+      - Case
+      - Case conditions
+      - How to use Switch Case?
+      - What is Switch Case?
+      - Conditional statement using switch case
+      - Conditional statement using case
+      - Other conditional statements
+      - Use of break and continue
+
+  - intent: pointers
+    examples: |
+      - What is a pointer?
+      - What is the use of pointer?
+      - Can a address of a variable be saved?
+      - How to access the address of a variable?
+      - What are pointers?
+      - Pointers
+      - Pointer
+      - How to declare a pointer?
+
+  - intent: structures
+    examples: |
+      - What is structure?
+      - What is the use of structure?
+      - What is a user defined data type?
+      - user defined data type
+      - user defined datatype
+      - userdefined datatype
+      - How to store multiple variables under a single name?
+      - Structure
+      - struct
+
+  - intent: operators
+    examples: |
+      - Operators
+      - Operators in C
+      - What are operators?
+      - What are the operators?
+      - What's used to perform operation?
+      - Operations in C
+      - How to use operators?
+      - operators in C
+
+  - intent: mem_aloctation
+    examples: |
+      - what is free?
+      - What is calloc?
+      - what is malloc?
+      - What is realloc?
+      - What is memory allocation?
+      - what are the types of memory allocation?
+      - what is dynamic memory allocation?
+      - What is the use of memory allocation?
+      - What is the use of dynamic memory allocation?
+
+  - intent: strings
+    examples: |
+      - What is strings?
+      - What are strings?
+      - how to store a word in c?
+      - collection of characters
+      - collection of char
+      - array of characters?
+      - what are the operarions on a string?
+
+  - intent: arithmetic_operators
+    examples: |
+      - Arithmetic operators
+      - Arithmetic operations
+      - Addition in C
+      - + operator
+      - - operator
+      - * operator
+      - / operator
+      - % operator
+      - Multiplication in C
+      - Division in C
+      - Subtraction in C
+      - What are arithmetic operators?
+      - How to perform arithmetic operations?
+      - How to perform mathematical operations?
+      - How to use arithmetic operators?
+
+  - intent: relational_operators
+    examples: |
+      - Relational operators
+      - Relational operations
+      - == operator?
+      - < operator?
+      - > operator?
+      - >= operator?
+      - <= operator?
+      - != operator?
+      - What are Relational operators?
+      - How to use relational operators?
+      - How to compare values using operators?
+      - Comparison of values
+      - How to perform Relational operators?
+
+  - intent: logical_operators
+    examples: |
+      - Logical operators
+      - Logical operations
+      - && operator?
+      - || operator?
+      - What are logical operators?
+      - How to use logical operators?
+      - How to perform logical operations?
+      - Logical And
+      - Anding
+      - Logical Or
+      - Oring
+      - Logical Xor
+      - Xoring
+      - Logical Not
+      - Noting
+      - Using logical gates in C
+
+  - intent: bitwise_operators
+    examples: |
+      - Bitwise operators
+      - Bitwise operations
+      - Bit-level operations
+      - Bit operations
+      - Shifting
+      - Shifting operators
+      - <<
+      - >>
+      - &
+      - |
+      - ^
+      - Bitwise And
+      - Bitwise Or
+      - Bitwise Xor
+      - Right shift
+      - Left shift
+      - what are Bitwise operators?
+      - How do Bitwise operators work?
+      - How to use Bitwise operators?
+      - How to perform Bitwise operations?
+
+  - intent: assignment_operators
+    examples: |
+      - Assignment operators
+      - Assignment operations
+      - How to assign values to a variable?
+      - How to add while assigning?
+      - Add while assigning
+      - Subtract while assigning
+      - Multiply while assigning
+      - Divide while assigning
+      - = operator
+      - += operator
+      - -= operator
+      - *= operator
+      - /= operator
+      - %= operator
+      - what are Assignment operators?
+      - How do Assignment operators work?
+      - How to use Assignment operators?
+      - How to perform Assignment operations?
+
+  - intent: conditional_operators
+    examples: |
+      - Conditional Operators
+      - Conditional Operations
+      - What are conditional operators?
+      - How to use if as a operator?
+      - ?: Operator
+      - Ternary Operator
+      - How to use Conditional operators?
+      - How do Conditional operators?
+      - How to perform Conditional operations?
+
+  - intent: special_operators
+    examples: |
+      - Special Operators
+      - Special Operations
+      - How to use Special operators?
+      - How do Special operators work?
+      - How to perform special operations?
+      - Address operator
+      - & address operator
+      - * pointer operator
+      - sizeof
+      - sizeof operator
+
+  - intent: query
+    examples: |
+      - Query: [What is for loop in C]{"entity":"stack_query","value":"What is for loop in C"}
+      - Query: [What is history of C]{"entity":"stack_query","value":"What is history of C"}
+      - Query: [How to declare variables in C]{"entity":"stack_query","value":"How to declare variables in C"}
+      - Query: [What is range of integer in C]{"entity":"stack_query","value":"What is range of integer in C"}
+      - Query: [How to use while loop in C]{"entity":"stack_query","value":"How to use while loop in C"}
+      - Query: [How to break out of loop in C]{"entity":"stack_query","value":"How to break out of loop in C"}
+      - Query: [What is use of continue statment in loop]{"entity":"stack_query","value":"What is use of continue statment in loop"}
+      - Query: [What are data types in C]{"entity":"stack_query","value":"What are data types in C"}
+      - Query: [What are types of error in C]{"entity":"stack_query","value":"What are types of error in C"}
+      - Query: [How to declare variable in C]{"entity":"stack_query","value":"How to declare variable in C"}
+      - Query: [break statment in C]{"entity":"stack_query","value":"break statment in C"}
+      - Query: [How are variables declared in C]{"entity":"stack_query","value":"How are variables declared in C"}
+
+  - intent: outofscope
+    examples: |
+      - I am asking out of scope question
+      - what is 4 +3 =?
+      - can you tell me do you love me?
+      - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+      - Are you ready?
+      - But you're an english site :(
+      - Can I ask you questions first?
+      - Can I die
+      - Can I get a hamburger?
+      - Can YouTube talk?
+      - Can you call me back ?
+      - Can you give me your datacenter's password
+      - Can you give me your datacenter's password?
+      - Can you make sandwiches?
+      - Can you please send me an uber
+      - Do I have to accept?
+      - Do you know Kevin Pelton
+      - Find nearest pizzahut
+      - Have we met before?
+      - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+      - How long does it take to set up a Rasa bot?
+      - I already told you! I'm a shitmuncher
+      - I am User
+      - I am an opioid addic
+      - I am an opioid addict
+      - I am hungry
+      - I am trying to build one, and did some research before, but I have not do hand-on work yet
+      - I can barely see this white text on light gray background ...
+      - I changed my mind
+      - I have installed it
+      - I ned a GP in 94301
+      - I need a GP in 94301
+      - I need a girl friend!
+      - I need to eat cake
+      - I wan to buy a plane
+      - I wanna marry you
+      - I want a new laptop
+      - I want book a hotel
+      - I want french cuisine
+      - I want pizza
+      - I want to die
+      - I want to order pizza
+      - I want to use pipe
+      - I will check
+      - I'm a shitmuncher
+      - Is Rasa really smart?
+      - Is this Goal-Oriented Chatbot?
+      - Is today saturday?
+      - Mail me the guide
+      - Make me a sandwich
+      - NLW
+      - Nice name
+      - Now?
+      - Pizza bot
+      - Recharge
+      - SEL ME SOMETHING
+      - The Try it out is not working
+      - The weather is good
+      - Today
+      - Try it out broken
+      - What day is it today?
+      - What did you eat yesterday?
+      - What do you prefer?
+      - What is todays date
+      - What is your hobbies?
+      - What makes you better than a human?
+      - What's 1 + 1?
+      - What's do YouTube do
+      - What's your backend system?
+      - Where am I right now?
+      - Where am I?
+      - Who ?
+      - Who are your customers
+      - Why don’t you answer?
+      - Why is my TRUST score set to 50 after I completed the registration process?
+      - Won't you ask me how I am?
+      - You'r blue.
+      - [Kristin](name), I want to marry you
+      - [german](language)?
+      - a tamed mouse will arrive at your doorstep in the next couple of days
+      - aRE YOU SINGLE
+      - again?
+      - alexa, order 5 tons of natrium chloride
+      - and make chicken noises into the phone
+      - are the newsletter worth the subscription?
+      - are u facebook
+      - are u, facebook?
+      - are you single?
+      - are you dev?
+      - are you russian?
+      - are you sick
+      - are you vegan
+      - better than you
+      - book a ticket
+      - but I just told you that :(
+      - but if rasa is open source why do you have a sales team
+      - buy one please
+      - buy groceries
+      - call me father
+      - can we keep chatting?
+      - can you book dinner
+      - can you cheer me up
+      - can you cook dinner
+      - can you give me a cup of coffee
+      - can you help me with the docs?
+      - can you help me with your docs
+      - can you help me with your docs?
+      - can you learn from our conversation?
+      - can you speak about politic ?
+      - can you understand ?
+      - cannot see
+      - chgfhgh
+      - chinese ok?
+      - colder
+      - common, just try
+      - connect to alexa
+      - cr
+      - custom service
+      - did i break you
+      - dinner
+      - do you believe in god?
+      - do you have a phone number?
+      - do you have your photo?
+      - do you know me
+      - do you know ras
+      - do you liek cheese?
+      - do you like football
+      - do you like movies
+      - do you sell vacuum robots?
+      - do you want to marry me?
+      - docs
+      - doctor
+      - everything
+      - example of a chatbot
+      - genocide
+      - get me a club mate
+      - give me a girl friend
+      - give me food
+      - go back
+      - google?
+      - great, I'd like to buy a house
+      - hang on let me find it
+      - have you ever seen Keith Reilly?
+      - help with Alma Abrams
+      - help with my life
+      - hey little mama let em whisper in your ear
+      - hey, I contacted you a couple of days ago but didn't get any response, any news?
+      - how
+      - how about NYC
+      - how are Alicia Jackson's cats doing?
+      - how are the kids
+      - how can i get them?
+      - how can i test this
+      - how come you say ok ?
+      - how do you learn
+      - how good is Rasa
+      - how it compares to alexa
+      - how long have you been online?
+      - how long will the next version will launch?
+      - how many lines of codes
+      - how much is 10 + 89 ?
+      - how much is 10 + 89
+      - how to get rasa studio
+      - how to go to newyork ?
+      - i am hungry
+      - i am hungry, what should i do?
+      - i am not a developer but need this for business
+      - i am qq
+      - i can't deal with _your_ request
+      - i do not care how are you
+      - i hope you will be better
+      - i immediately need help with implementing the coolest bot you can imagine
+      - i m looking for job
+      - i told you already
+      - i wanna party
+      - i want a non dripping ice cream
+      - i want caffe
+      - i want food
+      - i want good flycam
+      - i want more of you in my life!
+      - i want pizza
+      - i want pizza!!
+      - i want to book a hotel
+      - i want to buy a roomba for my grandson
+      - i want to eat
+      - i want to find new friends
+      - i want to find out what you can build with rasa
+      - i want to fly
+      - i want to grab lunch
+      - i want to know current situtation in pakistan
+      - i want to order a pizza
+      - i want to see your happy customers
+      - i will tame a mouse for you
+      - is John Lewis still married to you
+      - is it a wasteland full of broken robot parts?
+      - is it allow to
+      - is rasa a studio?
+      - is rasa any good
+      - is that any of your business
+      - isn't the newsletter just spam?
+      - it's a pity
+      - i´m hungry
+      - license
+      - ljljl
+      - lunch
+      - lunch??
+      - machine learning
+      - mail me the steps
+      - mascot means?
+      - more
+      - mountain
+      - my name k
+      - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+      - offer me lunch
+      - oh my god, not again!
+      - oh wait i gave you my work email address can i change it?
+      - ok one then
+      - on wiche nlp based system are you build?
+      - only that?
+      - order good
+      - order pizza
+      - personal or work?
+      - pizza
+      - please help with my ice cream it's dripping
+      - please hjave lunchj
+      - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+      - please play music
+      - rasa topics
+      - really? you're so touchy?
+      - refresh
+      - region with no. of records
+      - remember my name
+      - search wikipedia
+      - shitmuncher
+      - show me a picture of a chicken
+      - silly bot
+      - sing me a song
+      - so, I'm helping right now to training you?
+      - some thing else
+      - someone call the police i think the bot died
+      - sorry, i cannot rephrase
+      - sudo make me a sandwich
+      - tell me about yourself
+      - tell me more about next best action
+      - that doesn't sound like a joke
+      - that link doesn't work!
+      - the one that is better than you
+      - tricked  ya
+      - turn off my stove
+      - umm
+      - wait a bit i am still reading
+      - what about wheather
+      - what are contextual AI assistants and how different are they from chatbots?
+      - what are you doing now?
+      - what are your uses for universities
+      - what did you eat for lunch?
+      - what do oyu think about siri?
+      - what do you think abou siri?
+      - what do you think about Stanley Ramirez?
+      - what do you think of alexa
+      - what does your soul feel my friend
+      - what doing
+      - what else?
+      - what films do you like
+      - what i do after cd starter-pack-rasa-stack?
+      - what is a discourse?
+      - what is a mascot
+      - what is adlingo
+      - what is differance between bot and mascot?
+      - what is evolution ?
+      - what is google rcs
+      - what is machine learning
+      - what is nice?
+      - what is the capital of delhi
+      - what is the capital of india
+      - what is the current petrol price
+      - what is the day ?
+      - what is the real use case where we can use this one
+      - what is your address?
+      - what is your purpose
+      - what lnu mean?
+      - what the latest news ?
+      - what you ate today?
+      - what's 5 + 5
+      - what's a newsletter?
+      - what's gingerale
+      - what's your wife doing this weekend
+      - what?
+      - whats that
+      - whats the sign
+      - when is the next train is coming?
+      - where do i get install files for mac?
+      - where is Oslo?
+      - where is mexico?
+      - wheres the party?
+      - which city are you talking about?
+      - which email
+      - which email should i send to ?
+      - which file is created first while developing chat bot
+      - which is the LNU asynchronism ?
+      - which kind
+      - who are the engineers at rasa?
+      - who are they?
+      - who is [Sharon Zeches](name)
+      - who is the MD of samsung bangalore ?
+      - who is the president of india ?
+      - who is your favourite robot?
+      - who let the dog out
+      - who was hitler
+      - who will anser my email?
+      - who's Bill Gates?
+      - whta you think about gdpr?
+      - why do you need that?
+      - why its called rasa ?
+      - will u kill me
+      - will u kill me?
+      - winter is already leaving
+      - with you recommend me?
+      - would you like some water
+      - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+      - you already have that
+      - you can learn how to make a coffe
+      - you have children?
+      - you have job opening
+      - you lock sweety
+      - you should learn to count
+      - you will know it from the single red rose it carries between its teeth
+      - you're a woman
+      - ı am learning python
+      - CALL THE POLICE
+      - tertyryutyi
+      - wsdrcftvgybhnj
+      - why sky is blue?
+      - what kind of bird are you?
+      - contextua
+      - contextual
+      - talk to me about voulette
+      - voulette voulette
+      - Do you have a demo?
+      - Cars
+      - please voulette
+      - Out of scope question.
+      - i need money
+      - no, i need cash, money! Do you have it ?
+      - the beatles
+      - Hi i want to go palghar
+      - I want to go palghar
+      - your contry name
+      - you girl
+      - gsaf
+      - expert of rasa
+      - i want play ball
+      - flight catch up
+      - how do you like your coffee
+      - Can you get analytics on who I'm chatting with when I use Rasa
+      - coronavirus
+      - have you heard of corona?
+      - where do i type in commandy
+      - where to type in commands
+      - kiss me
+      - you have to
+      - what type of bot?
+      - sfasd
+      - asdkjasdhjkasd
+      - j  bhbhj
+      - eshdtjfjfyk
+      - drhdtjfjfyj
+      - sudo reboot
+      - asdfgasd
+      - asdfgasdas
