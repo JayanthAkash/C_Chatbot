@@ -52,6 +52,7 @@ intents:
   - structures
   - mem_aloctation
   - strings
+  - string
 
 entities:
   - stack_query
@@ -341,28 +342,28 @@ responses:
              The difference between a character array and a string is the string is terminated with a special character ‘\\0’.
              Declaration of strings: Declaring a string is as simple as declaring a one-dimensional array. Below is the basic syntax for declaring a string.\n
              char str_name[size];\n
-             In the above syntax str_name is any name given to the string variable and size is used to define the length of the string, 
-             i.e the number of characters strings will store. Please keep in mind that there is an extra terminating character which is the Null character (‘\\0’) 
+             In the above syntax str_name is any name given to the string variable and size is used to define the length of the string,
+             i.e the number of characters strings will store. Please keep in mind that there is an extra terminating character which is the Null character (‘\\0’)
              used to indicate the termination of string which differs strings from normal character arrays."
 
   utter_pointers:
     - image: https://www.geeksforgeeks.org/wp-content/uploads/How-Pointer-Works-In-C.png
-      text: "The pointer in C language is a variable which stores the address of another variable. 
-            This variable can be of type int, char, array, function, or any other pointer. 
-            The pointer in c language can be declared using * (asterisk symbol). 
+      text: "The pointer in C language is a variable which stores the address of another variable.
+            This variable can be of type int, char, array, function, or any other pointer.
+            The pointer in c language can be declared using * (asterisk symbol).
             It is also known as indirection pointer used to dereference a pointer."
 
   utter_struct:
     - image: https://media.geeksforgeeks.org/wp-content/cdn-uploads/Structure-In-C.png
-      text: "Structure is a user-defined datatype in C language which allows us to combine data of different types together. 
-      Structure helps to construct a complex data type which is more meaningful. It is somewhat similar to an Array, but an array holds data of similar type only. 
+      text: "Structure is a user-defined datatype in C language which allows us to combine data of different types together.
+      Structure helps to construct a complex data type which is more meaningful. It is somewhat similar to an Array, but an array holds data of similar type only.
       But structure on the other hand, can store data of any type \nFor example: If I have to write a program to store Student information, which will have Student's name, age, branch, permanent address, father's name etc, which included string values, integer values etc, how can I use arrays for this problem, I will require something which can hold data of different types together.
       In structure, data is stored in form of records. struct keyword is used to define a structure. struct defines a new data type which is a collection of primary and derived data types."
 
   utter_mem_alloc:
     - image: http://www.advancecomputing.co.in/wp-content/uploads/2019/06/DynamicMemoryAllocations.png
-      text: 
-        "Memory allocation is a process by which computer programs and services are assigned with physical or virtual memory space. 
+      text:
+        "Memory allocation is a process by which computer programs and services are assigned with physical or virtual memory space.
         Memory allocation is the process of reserving a partial or complete portion of computer memory for the execution of programs and processes."
 
   utter_outofscope:
